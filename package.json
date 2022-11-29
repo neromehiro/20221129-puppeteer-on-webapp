@@ -1,0 +1,27 @@
+{
+  "name": "puppeteer-on-webapp",
+  "description": "",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "puppeteer": "^19.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/horihiro/20221129-puppeteer-on-webapp.git"
+  },
+  "keywords": [
+    "webapp",
+    "puppeteer"
+  ],
+  "author": "horihiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/horihiro/20221129-puppeteer-on-webapp/issues"
+  },
+  "homepage": "https://github.com/horihiro/20221129-puppeteer-on-webapp#readme"
+}
