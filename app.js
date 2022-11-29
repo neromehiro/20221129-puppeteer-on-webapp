@@ -12,8 +12,7 @@ http.createServer(async function (req, res) {
     res.writeHead(200, { 'Content-Type': 'image/png' })
     const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
     const page = await browser.newPage();
-    await page.goto(url.searchParams.get('url') || 'https://www.microsoft.com/ja-jp/');
-    await new Promise(r => setTimeout(r, 10000));
+    await page.goto(url.searchParams.get('url') || 'https://www.microsoft.com/ja-jp/', {waitUntil: 'networkidle2'}) ;
     res.end(await page.screenshot())
     await browser.close();
     return
