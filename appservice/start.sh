@@ -18,4 +18,4 @@ apt update && apt install -y \
   libxrandr2
 
 cd /home/site/wwwroot
-node app.js
+PUPPETEER_CACHE_DIR=$(pwd)/node_modules/puppeteer node app.js
